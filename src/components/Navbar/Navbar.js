@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <h1 style={{marginLeft: '1rem', color: '#00d8ff'}}>Defi</h1>
-        <ul className='nav'>
+        <ul className={click ? 'nav active' : 'nav'}>
             <li className='nav-item'>
                     <a href='/'>Platform</a>
             </li>
@@ -27,7 +27,7 @@ const Navbar = () => {
             </li>
         </ul>
         <div onClick={handleclick} className='hamburger'>
-            <AiOutlineMenu className=''/>
+        {click ? (<AiOutlineClose className='icon'/>) : (<AiOutlineMenu className='icon' />)}
         </div>
     </div>
   )
