@@ -1,0 +1,24 @@
+.about{
+    width: 100%;
+    text-align: center;
+}
+
+.about h2 {
+
+    margin: 1rem 0;
+    color: #f8f8f8;
+}
+
+.about .container {
+
+    max-width: 1140px;
+    margin: auto;
+}
+
+.about .container > p {
+
+    margin: 1rem 0 3rem 0;
+    font-size: 1.2rem;
+    color: #f8f8f8;
+
+}
