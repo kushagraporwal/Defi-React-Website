@@ -82,3 +82,20 @@
     display: inline-block;
     margin-top: 1rem;
 }
+
+@media screen and (max-width:940px){
+
+    .about .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+@media screen and (max-width:600px){
+
+    .about .card-container{
+        grid-template-columns: 1fr;
+    }
+    
+}
+

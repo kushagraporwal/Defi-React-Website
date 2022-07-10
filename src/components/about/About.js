@@ -12,16 +12,16 @@ const About = () => {
             <p>Fast growing Website</p>
             <div className='card-container'>
                 <div className='card'>
-                    <About_card />
+                    <About_card  icon={<SiHiveBlockchain className='icon' />} heading='Reliable tammper-proof network'/>
                 </div>
                 <div className='card'>
-                    <About_card />
+                    <About_card icon={<SiStrapi className='icon' />} heading='Seamless tammper-proof network' text='Integrate with any current or future blockchain'/>
                 </div>
                 <div className='card'>
-                    <About_card />
+                    <About_card icon={<SiFsecure className='icon' />} heading='Proven ready made solutions' text='Integrate pre build time-tested oracle solutions'/>
                 </div>
                 <div className='card'>
-                    <About_card />
+                    <About_card icon={<VscServerProcess className='icon' />} heading='Secure off chain computation' text='Use a decentralized network of defi'/>
                 </div>
             </div>
             <a href='/' className='btn'>Use Defi</a>

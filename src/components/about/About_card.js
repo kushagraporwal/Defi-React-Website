@@ -1,14 +1,14 @@
 import React from 'react'
 import './About.css'
 
-const About_card = () => {
+const About_card = (props) => {
   return (
     <>
     <div className='icon-container'>
-      icon
+      {props.icon}
     </div>
-    <h3>heading</h3>
-    <p>text</p>
+    <h3>{props.heading}</h3>
+    <p>{props.text}</p>
     </>
   )
 }
